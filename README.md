@@ -4,21 +4,21 @@ literally just a cmd line wrapper for gnupg.
 
 ### instaling cmupgp
 
-ok first you have to clone the repository and
+ok first you have to clone the repository and run this
 
-```sh
+```bash
 git clone https://github.com/manuanish/CMU-PGP && cd CMU-PGP
 ```
 
 activate the venv using
 
-```sh
+```bash
 source .venv/bin/activate
 ```
 
 now run the program like this
 
-```sh
+```bash
 python src/main.py
 ```
 
@@ -32,7 +32,7 @@ we can use the program like this ...
 
 run the command to create a public/private key pair
 
-```sh
+```bash
 cgp --full-gen-key
 ```
 
@@ -40,7 +40,7 @@ cgp --full-gen-key
 
 we can run this command to clear-sign a message
 
-```sh
+```bash
 cgp --clear-sign *fiel name*
 ```
 
@@ -48,7 +48,7 @@ cgp --clear-sign *fiel name*
 
 to verify another message you can run
 
-```sh
+```bash
 cgp --verify *file name*
 ```
 
@@ -64,13 +64,13 @@ cgp: Good signature from "<name> (<comment>) <email>" [ultimate]
 
 we can also encrypt and decode message using
 
-```sh
+```bash
 cgp --encrypt
 ```
 
 and
 
-```sh
+```bash
 cgp --decrypt
 ```
 

@@ -23,7 +23,7 @@ while True:
         try:
             print(
                 sanatizeOutput(
-                    os.popen("gpg" + str(USER_INPUT[3 : len(USER_INPUT)])).read()
+                    os.popen("./gnupg/2.3.6/bin/gpg " + str(USER_INPUT[3 : len(USER_INPUT)])).read()
                 )
             )
         except:
